@@ -1,9 +1,11 @@
-package main.java.ru.barinov.hw4.interfaces;
+package main.java.ru.barinov.hw4.simpleLinkedList;
 
 
 public interface LinkedList<E> {
 
     void insertFirst(E value);
+
+    void  insert(int index, E value);
 
     E removeFirst();
 
@@ -19,7 +21,7 @@ public interface LinkedList<E> {
 
     E getFirst();
 
-    class Node<E>{
+    public class Node<E>{
         E value;
         Node<E> next;
 
